@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Choose the Right Chart Type</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.7;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      color: #333;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+      font-weight: 700;
+    }
+    h2 {
+      font-size: 1.8em;
+      margin-top: 2em;
+      margin-bottom: 1em;
+      font-weight: 600;
+    }
+    h3 {
+      font-size: 1.3em;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      font-weight: 600;
+    }
+    p {
+      margin-bottom: 1em;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 2em 0;
+    }
+    strong {
+      font-weight: 600;
+    }
+    em {
+      font-style: italic;
+    }
+    blockquote {
+      background-color: #f5f5f5;
+      border-left: 4px solid #ddd;
+      padding: 1em 1.5em;
+      margin: 1.5em 0;
+      font-style: italic;
+    }
+    ol {
+      margin: 1em 0;
+      padding-left: 1.5em;
+    }
+    li {
+      margin-bottom: 0.5em;
+    }
+    ul {
+      margin: 1em 0;
+      padding-left: 1.5em;
+    }
+    li {
+      margin-bottom: 0.5em;
+    }
+    .tags {
+      background-color: #e8f4f8;
+      border-radius: 9999px;
+      padding: 0.25em 0.75em;
+      display: inline-block;
+      font-size: 0.85em;
+      margin-bottom: 1em;
+    }
+    .tag-list {
+      background-color: #e8f4f8;
+      border-radius: 9999px;
+      padding: 0.25em 0.75em;
+      display: inline-block;
+      font-size: 0.85em;
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>How to Choose the Right Chart Type</h1>
+  <p><span class="tag-list">Tags: Visualization, Best Practices</span></p>
+  <hr>
+  <p>Most analysts default to bar charts. Not because bar charts are always right — but because they're safe. Safe choices produce forgettable dashboards.</p>
+  <p>The chart you choose is an argument. It says: <em>this is the relationship that matters, and this is the best way to see it.</em> Choosing wrong doesn't just look bad — it actively misleads. An audience reads the chart before they read the label.</p>
+  <p>Here's the decision framework that cuts through the noise.</p>
+  <hr>
+  <h2>The Core Principle: Match the Chart to the Question</h2>
+  <p>This sounds obvious. It isn't practiced. Most people choose charts based on what data they have. The correct approach: start with the question you're answering, then select the chart that makes the answer immediately visible.</p>
+  <p>Ask yourself: <strong>What is the reader supposed to take away in the first three seconds?</strong></p>
+  <p>That single constraint eliminates most chart-type debates.</p>
+  <hr>
+  <h2>The Four Question Types — and the Charts That Serve Them</h2>
+  <h3>1. Comparison: How do values differ across categories?</h3>
+  <p><strong>Use: Bar chart (horizontal or vertical)</strong></p>
+  <p>Bar charts are the workhorse of comparison. Vertical bars for time (months, quarters). Horizontal bars for categories with long names or when you have more than six items — rotating labels on vertical bars is always a mistake.</p>
+  <p>Avoid pie charts here. Humans are poor at comparing angles and areas. A bar chart showing five segments is always clearer than a pie showing five slices.</p>
+  <p><strong>When to break this rule</strong>: Grouped bar charts become unreadable beyond three groups. Switch to a small-multiple approach or a dot plot.</p>
+  <hr>
+  <h3>2. Trend: How does a value change over time?</h3>
+  <p><strong>Use: Line chart</strong></p>
+  <p>Line charts communicate change and direction. The slope is the message. If values are not connected — discrete events rather than a continuous series — use a bar chart instead, because the line implies continuity that doesn't exist.</p>
+  <p>Common mistake: using a line chart with too many series. Three to four lines is typically the maximum before the chart becomes a spaghetti plot. If you need more, consider indexing to a baseline (100 = start) so trajectories are comparable regardless of scale.</p>
+  <hr>
+  <h3>3. Relationship: Do two variables correlate?</h3>
+  <p><strong>Use: Scatter plot</strong></p>
+  <p>Scatter plots reveal correlation, clusters, and outliers simultaneously. They're underused in business analytics because they feel "statistical" — which is exactly why they signal analytical depth when used correctly.</p>
+  <p>Add a trend line when the correlation direction is the point. Label outliers directly on the chart rather than describing them in accompanying text.</p>
+  <p>Avoid using scatter plots when you have fewer than 20 data points — the pattern isn't reliable enough to be meaningful, and the chart will look sparse.</p>
+  <hr>
+  <h3>4. Distribution: How is a variable spread across its range?</h3>
+  <p><strong>Use: Histogram or box plot</strong></p>
+  <p>Histograms show frequency across bins — useful for seeing whether a distribution is normal, skewed, bimodal, or heavy-tailed. Box plots (or violin plots) are better when comparing distributions across groups.</p>
+  <p>This is the most neglected chart type in business analytics. Reporting only the mean hides everything interesting about a distribution. Session duration, transaction values, load times — these almost always have long tails that the average conceals.</p>
+  <hr>
+  <h2>Special Cases Worth Knowing</h2>
+  <p><strong>Heatmap</strong>: Use when you have two categorical dimensions and a continuous value. Week vs. hour of day and activity level is the classic example. The human eye reads colour gradients quickly for dense matrices — better than any table or grouped bar chart.</p>
+  <p><strong>Waterfall chart</strong>: Use for decomposition — showing how a starting value reaches an ending value through additions and subtractions. Finance teams overuse these; analysts underuse them for things like user funnel drop-off or budget variance analysis.</p>
+  <p><strong>Small multiples</strong>: When you want to compare the same chart across many segments, replicate the chart at small size rather than overlaying everything on one chart. Works exceptionally well for regional comparisons or cohort breakdowns.</p>
+  <hr>
+  <h2>What to Actively Avoid</h2>
+  <p><strong>3D charts</strong>: They introduce a third visual dimension that carries no data. They distort perception and exist purely for decoration. Remove them from your toolkit entirely.</p>
+  <p><strong>Dual-axis charts</strong>: Two Y-axes create apparent correlations that may not exist. Readers don't know which axis to trust. Use two separate charts if two scales are genuinely required.</p>
+  <p><strong>Donut charts</strong>: A pie chart with a hole. The hole doesn't add information. If you're using this, use a bar chart.</p>
+  <p><strong>Truncated Y-axes</strong>: Starting a bar chart at a value other than zero exaggerates differences. This is a common dark pattern in media. Don't do it accidentally; don't do it deliberately.</p>
+  <hr>
+  <h2>The Pre-Publish Checklist</h2>
+  <p>Before any chart goes into a report or dashboard, run it through these four questions:</p>
+  <ol>
+    <li><strong>Can someone read the takeaway in under five seconds without me explaining it?</strong></li>
+    <li><strong>Is every element on this chart carrying information, or is some of it decoration?</strong></li>
+    <li><strong>Would a different chart type make the answer more obvious?</strong></li>
+    <li><strong>Am I showing the right level of detail for this audience?</strong></li>
+  </ol>
+  <p>If the answer to question one is no, the chart needs work — not more labels, but a different structure.</p>
+  <hr>
+  <h2>Takeaway</h2>
+  <p>The best chart is the one that makes the answer self-evident. That means starting with the question, not the data. It means knowing which question type (comparison, trend, relationship, distribution) maps to which visual form. And it means the discipline to cut anything that doesn't carry meaning.</p>
+  <p>A chart that requires explanation has already failed. Build the explanation into the structure.</p>
+  <hr>
+  <p class="tag-list">*Tags: Visualization · Best Practices · Data Analytics*</p>
+</body>
+</html>
