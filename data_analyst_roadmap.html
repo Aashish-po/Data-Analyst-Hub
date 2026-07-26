@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Analyst Roadmap — Data Analyst Hub</title>
+  <meta name="description"
+    content="A structured 26-topic learning roadmap for aspiring data analysts. From zero to hired in 20 weeks.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Sora:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Roadmap-specific styles */
+    .roadmap-page {
+      padding: 48px 24px;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .roadmap-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .roadmap-header h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(28px, 4vw, 42px);
+      margin-bottom: 12px;
+    }
+
+    .roadmap-header p {
+      font-size: 15px;
+      color: var(--ink-3);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Timeline */
+    .roadmap-timeline {
+      position: relative;
+      margin: 40px 0;
+    }
+
+    .roadmap-timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 20px;
+      width: 2px;
+      background: var(--border);
+    }
+
+    .roadmap-phase {
+      position: relative;
+      margin-bottom: 40px;
+      padding-left: 56px;
+    }
+
+    .roadmap-phase-dot {
+      position: absolute;
+      left: 12px;
+      top: 4px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 3px solid var(--paper);
+      z-index: 1;
+    }
+
+    .roadmap-phase-header {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .roadmap-phase-title {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      color: var(--ink);
+    }
+
+    .roadmap-phase-weeks {
+      font-size: 13px;
+      color: var(--ink-3);
+      font-family: var(--font-mono);
+    }
+
+    .roadmap-topics {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .roadmap-topic {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+      transition: box-shadow 0.2s;
+    }
+
+    .roadmap-topic:hover {
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    }
+
+    .roadmap-topic-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .roadmap-topic-num {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--ink-3);
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+    }
+
+    .roadmap-topic-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .roadmap-topic-desc {
+      font-size: 13px;
+      color: var(--ink-3);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .roadmap-topic-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .roadmap-topic-links a {
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-light);
+      color: var(--accent);
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .roadmap-topic-links a:hover {
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .roadmap-page {
+        padding: 32px 16px;
+      }
+
+      .roadmap-phase {
+        padding-left: 40px;
+      }
+
+      .roadmap-phase-dot {
+        left: 4px;
+      }
+
+      .roadmap-phase-title {
+        font-size: 18px;
+      }
+
+      .roadmap-topic-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Data Analyst Hub Home">
+        <span class="logo-dot"></span> Data Analyst Hub
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="learning.html">Learning</a></li>
+        <li><a href="interview.html">Interview Prep</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="hero" style="padding:48px 24px 40px">
+      <div class="hero-inner">
+        <span class="hero-badge">Full Roadmap</span>
+        <h1>From <em>Zero</em> to Data Analyst</h1>
+        <p class="hero-sub">A structured, 26-topic learning roadmap for beginners with basic Python and Excel knowledge,
+          optimised for landing a job in under 5 months.</p>
+      </div>
+    </section>
+
+    <div class="roadmap-page">
+      <div class="roadmap-header">
+        <h2>26 Topics · 6 Phases · 20 Weeks</h2>
+        <p>Each phase builds on the previous one. Phases 3–5 intentionally overlap — begin portfolio projects while
+          deepening analysis skills.</p>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-num">26</div>
+          <div class="stat-label">Topics</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">6</div>
+          <div class="stat-label">Phases</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">20</div>
+          <div class="stat-label">Weeks</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">20+</div>
+          <div class="stat-label">Hrs / Week</div>
+        </div>
+      </div>
+
+      <div class="roadmap-timeline">
+        <!-- PHASE 1 -->
+        <div class="roadmap-phase">
+          <div class="roadmap-phase-dot" style="background:#1a4fd6"></div>
+          <div class="roadmap-phase-header">
+            <h3 class="roadmap-phase-title">Phase 1 — Foundations</h3>
+            <span class="roadmap-phase-weeks">Weeks 1–3</span>
+          </div>
+          <div class="roadmap-topics">
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">01</span>
+                <span class="roadmap-topic-title">Data Fundamentals</span>
+              </div>
+              <p class="roadmap-topic-desc">Understand structured vs. unstructured data, CSV/JSON/databases, data
+                pipelines (ETL), and how data flows from collection to insight.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://www.coursera.org/learn/foundations-data" target="_blank" rel="noopener">Coursera —
+                  Google Data Analytics</a>
+                <a href="https://www.dataliteracy.com/" target="_blank" rel="noopener">Data Literacy Project</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">02</span>
+                <span class="roadmap-topic-title">Excel for Data Analysis</span>
+              </div>
+              <p class="roadmap-topic-desc">PivotTables, XLOOKUP, dynamic arrays, Power Query for ETL, data validation,
+                and conditional formatting for analysis.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://exceljet.net/" target="_blank" rel="noopener">ExcelJet</a>
+                <a href="https://chandoo.org/excel/pivot-tables/" target="_blank" rel="noopener">Chandoo —
+                  PivotTables</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">03</span>
+                <span class="roadmap-topic-title">Statistics Fundamentals</span>
+              </div>
+              <p class="roadmap-topic-desc">Mean, median, mode, variance, std deviation, normal distribution, CLT,
+                p-values, confidence intervals, t-test, chi-square.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://www.youtube.com/@statquest" target="_blank" rel="noopener">StatQuest (YouTube)</a>
+                <a href="https://www.khanacademy.org/math/statistics-probability" target="_blank" rel="noopener">Khan
+                  Academy</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">04</span>
+                <span class="roadmap-topic-title">Python for Data Analysis</span>
+              </div>
+              <p class="roadmap-topic-desc">pandas DataFrames: load, inspect, filter, sort, groupby, merge, pivot. NumPy
+                arrays and vectorised operations.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://www.kaggle.com/learn/pandas" target="_blank" rel="noopener">Kaggle — Pandas</a>
+                <a href="https://pandas.pydata.org/docs/" target="_blank" rel="noopener">pandas Docs</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">05</span>
+                <span class="roadmap-topic-title">Data Ethics</span>
+              </div>
+              <p class="roadmap-topic-desc">Algorithmic bias, data privacy laws (GDPR, CCPA), PII handling, informed
+                consent, avoiding misleading visualisations.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://themarkup.org/investigation" target="_blank" rel="noopener">The Markup</a>
+                <a href="https://www.linkedin.com/learning/ethics-in-ai-and-big-data" target="_blank"
+                  rel="noopener">LinkedIn Learning</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PHASE 2 -->
+        <div class="roadmap-phase">
+          <div class="roadmap-phase-dot" style="background:#0e7490"></div>
+          <div class="roadmap-phase-header">
+            <h3 class="roadmap-phase-title">Phase 2 — Core Tools</h3>
+            <span class="roadmap-phase-weeks">Weeks 4–7</span>
+          </div>
+          <div class="roadmap-topics">
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">06</span>
+                <span class="roadmap-topic-title">SQL Basics</span>
+              </div>
+              <p class="roadmap-topic-desc">SELECT, WHERE, JOIN (all types), GROUP BY, HAVING, ORDER BY, subqueries. The
+                most-tested skill in DA interviews.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://mode.com/sql-tutorial/" target="_blank" rel="noopener">Mode SQL Tutorial</a>
+                <a href="https://sqlzoo.net/" target="_blank" rel="noopener">SQLZoo</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">07</span>
+                <span class="roadmap-topic-title">SQL Advanced</span>
+              </div>
+              <p class="roadmap-topic-desc">Window functions (ROW_NUMBER, RANK, LAG, LEAD), CTEs, recursive CTEs, CASE
+                WHEN, query optimisation, indexes.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://www.pgexercises.com/" target="_blank" rel="noopener">pgexercises.com</a>
+                <a href="https://datalemur.com/" target="_blank" rel="noopener">DataLemur</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">08</span>
+                <span class="roadmap-topic-title">Data Visualization Principles</span>
+              </div>
+              <p class="roadmap-topic-desc">When to use bar vs. line vs. scatter vs. heatmap. Pre-attentive attributes,
+                Gestalt principles, colour theory, accessibility.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://www.storytellingwithdata.com/blog" target="_blank" rel="noopener">Storytelling with
+                  Data</a>
+                <a href="https://www.data-to-viz.com/" target="_blank" rel="noopener">From Data to Viz</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">09</span>
+                <span class="roadmap-topic-title">Python Visualization</span>
+              </div>
+              <p class="roadmap-topic-desc">matplotlib for custom static charts, seaborn for statistical visuals, plotly
+                for interactive dashboards.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://www.python-graph-gallery.com/" target="_blank" rel="noopener">Python Graph Gallery</a>
+                <a href="https://www.kaggle.com/learn/data-visualization" target="_blank" rel="noopener">Kaggle — Data
+                  Viz</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">10</span>
+                <span class="roadmap-topic-title">Business Intelligence Tools</span>
+              </div>
+              <p class="roadmap-topic-desc">Tableau: connect, drag-drop, calculated fields, dashboards. Power BI: Power
+                Query, DAX basics, report pages, slicers.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://public.tableau.com/en-us/s/resources" target="_blank" rel="noopener">Tableau
+                  Training</a>
+                <a href="https://learn.microsoft.com/en-us/training/paths/create-use-analytics-reports-power-bi/"
+                  target="_blank" rel="noopener">Microsoft Learn — Power BI</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PHASE 3 -->
+        <div class="roadmap-phase">
+          <div class="roadmap-phase-dot" style="background:#1a7a4a"></div>
+          <div class="roadmap-phase-header">
+            <h3 class="roadmap-phase-title">Phase 3 — Analysis Skills</h3>
+            <span class="roadmap-phase-weeks">Weeks 8–12</span>
+          </div>
+          <div class="roadmap-topics">
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">11</span>
+                <span class="roadmap-topic-title">Data Cleaning & Preparation</span>
+              </div>
+              <p class="roadmap-topic-desc">Systematic approach: audit → clean → validate. Handling missing values,
+                outlier detection, string normalisation, reshaping.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://www.kaggle.com/learn/data-cleaning" target="_blank" rel="noopener">Kaggle — Data
+                  Cleaning</a>
+                <a href="https://vita.had.co.nz/papers/tidy-data.pdf" target="_blank" rel="noopener">Tidy Data
+                  (Wickham)</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">12</span>
+                <span class="roadmap-topic-title">Exploratory Data Analysis (EDA)</span>
+              </div>
+              <p class="roadmap-topic-desc">Repeatable EDA framework: shape/dtypes → nulls → distributions →
+                correlations → outliers → time trends → bivariate analysis.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://www.kaggle.com/learn/intro-to-machine-learning" target="_blank" rel="noopener">Kaggle —
+                  EDA Chapters</a>
+                <a href="https://github.com/ydataai/ydata-profiling" target="_blank" rel="noopener">ydata-profiling</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">13</span>
+                <span class="roadmap-topic-title">Statistical Analysis Applied</span>
+              </div>
+              <p class="roadmap-topic-desc">Apply statistics in Python: scipy.stats for t-tests and chi-square,
+                statsmodels for linear regression, correlation matrices.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://docs.scipy.org/doc/scipy/reference/stats.html" target="_blank"
+                  rel="noopener">scipy.stats Docs</a>
+                <a href="https://www.statsmodels.org/stable/index.html" target="_blank" rel="noopener">statsmodels
+                  Docs</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">14</span>
+                <span class="roadmap-topic-title">A/B Testing & Experimentation</span>
+              </div>
+              <p class="roadmap-topic-desc">Design: hypothesis, control/treatment, minimum detectable effect. Power
+                analysis. Analyse: t-tests, confidence intervals.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://www.evanmiller.org/ab-testing/sample-size.html" target="_blank" rel="noopener">Evan
+                  Miller Calculator</a>
+                <a href="https://www.udacity.com/course/ab-testing--ud257" target="_blank" rel="noopener">Udacity — A/B
+                  Testing</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">15</span>
+                <span class="roadmap-topic-title">Business Metrics & KPIs</span>
+              </div>
+              <p class="roadmap-topic-desc">DAU/MAU, retention, LTV, CAC, NPS, ARPU, conversion rate, bounce rate. Know
+                how to define, compute, and track each.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://a16z.com/2015/08/21/16-metrics/" target="_blank" rel="noopener">a16z — 16 Metrics</a>
+                <a href="https://mode.com/blog/" target="_blank" rel="noopener">Mode Analytics Blog</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">16</span>
+                <span class="roadmap-topic-title">Cohort & Funnel Analysis</span>
+              </div>
+              <p class="roadmap-topic-desc">Cohort analysis: group users by acquisition date, track behaviour over time.
+                Funnel analysis: step-by-step drop-off rates.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://mode.com/sql-tutorial/sql-cohort-analysis/" target="_blank" rel="noopener">Mode —
+                  Cohort Analysis</a>
+                <a href="https://heap.io/topics/funnel-analysis" target="_blank" rel="noopener">Heap — Funnel
+                  Analysis</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PHASE 4 -->
+        <div class="roadmap-phase">
+          <div class="roadmap-phase-dot" style="background:#9a6000"></div>
+          <div class="roadmap-phase-header">
+            <h3 class="roadmap-phase-title">Phase 4 — BI & Professional Skills</h3>
+            <span class="roadmap-phase-weeks">Weeks 10–14</span>
+          </div>
+          <div class="roadmap-topics">
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">17</span>
+                <span class="roadmap-topic-title">Tableau — Intermediate</span>
+              </div>
+              <p class="roadmap-topic-desc">LOD expressions, table calculations, advanced dashboard design, parameters,
+                and performance optimisation.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://www.tableau.com/about/blog/2016/3/tableau-201-lod-expressions" target="_blank"
+                  rel="noopener">Tableau LOD Whitepaper</a>
+                <a href="https://community.tableau.com/" target="_blank" rel="noopener">Tableau Community</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">18</span>
+                <span class="roadmap-topic-title">Power BI — Intermediate</span>
+              </div>
+              <p class="roadmap-topic-desc">Master DAX functions: CALCULATE, SUMX, RANKX. Time intelligence,
+                relationship modelling, and performance tuning.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://dax.guide/" target="_blank" rel="noopener">SQLBI — DAX Guide</a>
+                <a href="https://learn.microsoft.com/en-us/certifications/exams/pl-300" target="_blank"
+                  rel="noopener">Microsoft — PL-300</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">19</span>
+                <span class="roadmap-topic-title">Communication Skills</span>
+              </div>
+              <p class="roadmap-topic-desc">The Pyramid Principle, SCQA framework, writing executive summaries,
+                presenting technical findings to non-technical audiences.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://medium.com/lessons-from-mckinsey/the-pyramid-principle-f0885dd3c5c" target="_blank"
+                  rel="noopener">Pyramid Principle</a>
+                <a href="https://academy.hubspot.com/" target="_blank" rel="noopener">HubSpot Academy</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">20</span>
+                <span class="roadmap-topic-title">Storytelling with Data</span>
+              </div>
+              <p class="roadmap-topic-desc">Narrative structure for data presentations, choosing the right visual for
+                the story, reducing cognitive load.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://www.makeovermonday.co.uk/" target="_blank" rel="noopener">Makeover Monday</a>
+                <a href="https://www.storytellingwithdata.com/podcast" target="_blank" rel="noopener">SWD Podcast</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">21</span>
+                <span class="roadmap-topic-title">Project Management</span>
+              </div>
+              <p class="roadmap-topic-desc">Agile/Scrum basics, RICE prioritization, stakeholder management, and working
+                effectively with engineering teams.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://www.atlassian.com/agile" target="_blank" rel="noopener">Atlassian Agile Coach</a>
+                <a href="https://scrumguides.org/" target="_blank" rel="noopener">Scrum Guide</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PHASE 5 -->
+        <div class="roadmap-phase">
+          <div class="roadmap-phase-dot" style="background:#5b21b6"></div>
+          <div class="roadmap-phase-header">
+            <h3 class="roadmap-phase-title">Phase 5 — Portfolio</h3>
+            <span class="roadmap-phase-weeks">Weeks 13–17</span>
+          </div>
+          <div class="roadmap-topics">
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">22</span>
+                <span class="roadmap-topic-title">Domain Specialisation</span>
+              </div>
+              <p class="roadmap-topic-desc">Pick one domain: SaaS/Product (Lenny's Newsletter, Reforge), E-Commerce
+                (Shopify, Google Analytics), or Fintech (Investopedia, Crunchbase).</p>
+              <div class="roadmap-topic-links">
+                <a href="https://www.lennysnewsletter.com/" target="_blank" rel="noopener">Lenny's Newsletter</a>
+                <a href="https://www.shopify.com/blog/topics/analytics" target="_blank" rel="noopener">Shopify
+                  Analytics</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">23</span>
+                <span class="roadmap-topic-title">Portfolio Project I — EDA & Insight Report</span>
+              </div>
+              <p class="roadmap-topic-desc">Complete end-to-end EDA project on GitHub with clean README. Use a Kaggle
+                dataset or data.gov source.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://www.kaggle.com/datasets" target="_blank" rel="noopener">Kaggle Datasets</a>
+                <a href="https://www.makeareadme.com/" target="_blank" rel="noopener">makeareadme.com</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">24</span>
+                <span class="roadmap-topic-title">Portfolio Project II — SQL + Dashboard</span>
+              </div>
+              <p class="roadmap-topic-desc">10+ SQL queries on BigQuery public datasets plus a published BI dashboard on
+                Tableau Public or Power BI Service.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://console.cloud.google.com/bigquery/public-datasets" target="_blank"
+                  rel="noopener">BigQuery Public Datasets</a>
+                <a href="https://public.tableau.com/app/gallery" target="_blank" rel="noopener">Tableau Public
+                  Gallery</a>
+              </div>
+            </div>
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">25</span>
+                <span class="roadmap-topic-title">Portfolio Presentation & GitHub</span>
+              </div>
+              <p class="roadmap-topic-desc">Polish GitHub repos, optimize LinkedIn profile, build a resume that
+                highlights project outcomes and metrics.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://www.youtube.com/@AlexTheAnalyst" target="_blank" rel="noopener">Alex The Analyst</a>
+                <a href="https://www.tealhq.com/" target="_blank" rel="noopener">Teal HQ Resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PHASE 6 -->
+        <div class="roadmap-phase">
+          <div class="roadmap-phase-dot" style="background:#b91c1c"></div>
+          <div class="roadmap-phase-header">
+            <h3 class="roadmap-phase-title">Phase 6 — Job Readiness</h3>
+            <span class="roadmap-phase-weeks">Weeks 16–20</span>
+          </div>
+          <div class="roadmap-topics">
+            <div class="roadmap-topic">
+              <div class="roadmap-topic-header">
+                <span class="roadmap-topic-num">26</span>
+                <span class="roadmap-topic-title">Interview Preparation (Full Stack)</span>
+              </div>
+              <p class="roadmap-topic-desc">SQL drilling (LeetCode, DataLemur, StrataScratch), take-home case studies,
+                statistics review, product sense, and STAR behavioural prep.</p>
+              <div class="roadmap-topic-links">
+                <a href="https://leetcode.com/problemset/database/" target="_blank" rel="noopener">LeetCode SQL</a>
+                <a href="https://datalemur.com/" target="_blank" rel="noopener">DataLemur</a>
+                <a href="https://www.pramp.com/" target="_blank" rel="noopener">Pramp — Mock Interviews</a>
+                <a href="interview.html">Full Interview Guide →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Sections</h4>
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="learning.html">Learning</a>
+        <a href="interview.html">Interview Prep</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Popular Tools</h4>
+        <a href="https://www.python-graph-gallery.com/" target="_blank" rel="noopener">Python Graph Gallery</a>
+        <a href="https://www.kaggle.com/learn" target="_blank" rel="noopener">Kaggle Learn</a>
+        <a href="https://leetcode.com/problemset/database/" target="_blank" rel="noopener">LeetCode SQL</a>
+        <a href="https://www.storytellingwithdata.com/" target="_blank" rel="noopener">Storytelling with Data</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Data Analyst Hub — Resources for aspiring data professionals. All links verified as of July 2025.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

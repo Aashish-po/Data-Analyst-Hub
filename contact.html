@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Feedback — Data Analyst Hub</title>
+  <meta name="description" content="Get in touch or share feedback on the Data Analyst Hub resources and website.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Sora:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Data Analyst Hub Home">
+        <span class="logo-dot"></span> Data Analyst Hub
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="learning.html">Learning</a></li>
+        <li><a href="interview.html">Interview Prep</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="hero" style="padding:48px 24px 40px">
+      <div class="hero-inner">
+        <span class="hero-badge">Contact & Feedback</span>
+        <h1>Get in Touch</h1>
+        <p class="hero-sub">Have a suggestion, found a broken link, or want to share your experience? We welcome
+          feedback from all visitors.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;max-width:900px;margin:0 auto">
+
+        <!-- CONTACT FORM -->
+        <div>
+          <h3 style="font-family:var(--font-heading);font-size:22px;margin-bottom:20px">Contact Us</h3>
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Name *</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="Your full name" required>
+              <div class="form-error"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Email *</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="your@email.com" required>
+              <div class="form-error"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Subject</label>
+              <select id="contact-subject" class="form-select">
+                <option value="">Select a topic</option>
+                <option value="broken-link">Broken link report</option>
+                <option value="suggestion">Resource suggestion</option>
+                <option value="feedback">Website feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message *</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Tell us what's on your mind..."
+                required></textarea>
+              <div class="form-error"></div>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div class="form-success">Thank you! Your message has been sent.</div>
+          </form>
+        </div>
+
+        <!-- FEEDBACK FORM -->
+        <div>
+          <h3 style="font-family:var(--font-heading);font-size:22px;margin-bottom:20px">Share Feedback</h3>
+          <form id="feedback-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="feedback-name">Name *</label>
+              <input type="text" id="feedback-name" class="form-input" placeholder="Your full name" required>
+              <div class="form-error"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="feedback-email">Email *</label>
+              <input type="email" id="feedback-email" class="form-input" placeholder="your@email.com" required>
+              <div class="form-error"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="feedback-rating">Rating *</label>
+              <select id="feedback-rating" class="form-select" required>
+                <option value="">Select a rating</option>
+                <option value="5">5 — Excellent</option>
+                <option value="4">4 — Very Good</option>
+                <option value="3">3 — Good</option>
+                <option value="2">2 — Fair</option>
+                <option value="1">1 — Needs Improvement</option>
+              </select>
+              <div class="form-error"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="feedback-category">Category</label>
+              <select id="feedback-category" class="form-select">
+                <option value="">Select a category</option>
+                <option value="resources">Resource Quality</option>
+                <option value="content">Content Accuracy</option>
+                <option value="usability">Website Usability</option>
+                <option value="suggestion">Feature Request</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="feedback-comments">Comments *</label>
+              <textarea id="feedback-comments" class="form-textarea"
+                placeholder="What would you improve? What was most helpful?" required></textarea>
+              <div class="form-error"></div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Feedback</button>
+            <div class="form-success">Thank you for your feedback!</div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- ADDITIONAL CONTACT INFO -->
+      <div style="max-width:900px;margin:48px auto 0;text-align:center">
+        <h3 style="font-family:var(--font-heading);font-size:20px;margin-bottom:16px">Other Ways to Reach Us</h3>
+        <div style="display:flex;gap:24px;justify-content:center;flex-wrap:wrap">
+          <div style="padding:16px">
+            <strong>GitHub</strong>
+            <p style="font-size:14px;color:var(--ink-3);margin-top:4px">Source code and issue tracking</p>
+            <a href="https://github.com/" style="font-size:13px">github.com →</a>
+          </div>
+          <div style="padding:16px">
+            <strong>LinkedIn</strong>
+            <p style="font-size:14px;color:var(--ink-3);margin-top:4px">Connect with the community</p>
+            <a href="https://business.linkedin.com/talent-solutions/talent-blog" style="font-size:13px">linkedin.com
+              →</a>
+          </div>
+          <div style="padding:16px">
+            <strong>Reddit</strong>
+            <p style="font-size:14px;color:var(--ink-3);margin-top:4px">Community discussions</p>
+            <a href="https://www.reddit.com/r/datascience/" style="font-size:13px">reddit.com/r/datascience →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Sections</h4>
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="learning.html">Learning</a>
+        <a href="interview.html">Interview Prep</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Popular Tools</h4>
+        <a href="https://www.python-graph-gallery.com/" target="_blank" rel="noopener">Python Graph Gallery</a>
+        <a href="https://www.kaggle.com/learn" target="_blank" rel="noopener">Kaggle Learn</a>
+        <a href="https://leetcode.com/problemset/database/" target="_blank" rel="noopener">LeetCode SQL</a>
+        <a href="https://www.storytellingwithdata.com/" target="_blank" rel="noopener">Storytelling with Data</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Data Analyst Hub — Resources for aspiring data professionals. All links verified as of July 2025.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

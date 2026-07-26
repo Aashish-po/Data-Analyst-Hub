@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interview Prep — Data Analyst Hub</title>
+  <meta name="description"
+    content="SQL practice, case studies, statistics interview prep, and behavioural frameworks for data analyst interviews.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Sora:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Data Analyst Hub Home">
+        <span class="logo-dot"></span> Data Analyst Hub
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="learning.html">Learning</a></li>
+        <li><a href="interview.html" class="active">Interview Prep</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="hero" style="padding:48px 24px 40px">
+      <div class="hero-inner">
+        <span class="hero-badge">Interview Prep</span>
+        <h1>Prepare with Purpose</h1>
+        <p class="hero-sub">Practice platforms, case study strategies, and frameworks for every stage of the data
+          analyst interview process.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="filter-bar" role="group" aria-label="Filter interview resources">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="sql">SQL Practice</button>
+        <button class="filter-btn" data-filter="case">Case Studies</button>
+        <button class="filter-btn" data-filter="stats">Statistics</button>
+        <button class="filter-btn" data-filter="product">Product Sense</button>
+        <button class="filter-btn" data-filter="behavioural">Behavioural</button>
+      </div>
+
+      <!-- SQL PRACTICE -->
+      <h3 style="font-family:var(--font-heading);font-size:20px;margin-bottom:16px">SQL Interview Drilling</h3>
+      <div class="cards-grid" style="margin-bottom:40px">
+        <div class="card filterable-item" data-tags="sql">
+          <span class="card-badge badge-freemium">Freemium</span>
+          <h3>LeetCode — Database</h3>
+          <p>The most widely used platform for SQL interview prep. Problems ranked Easy to Hard, with discussion threads
+            and solutions.</p>
+          <span class="card-meta"><span>Difficulty: Easy → Hard</span><span>Cost: Freemium</span></span>
+          <a href="https://leetcode.com/problemset/database/" class="card-link" target="_blank"
+            rel="noopener">leetcode.com/problemset/database/ →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: leetcode.com — Active as of July 2025
+          </p>
+        </div>
+        <div class="card filterable-item" data-tags="sql">
+          <span class="card-badge badge-freemium">Freemium</span>
+          <h3>DataLemur</h3>
+          <p>Real FAANG SQL interview questions with hints and detailed solutions. Covers window functions, CTEs, and
+            optimization patterns.</p>
+          <span class="card-meta"><span>Difficulty: Medium → Hard</span><span>Cost: Freemium</span></span>
+          <a href="https://datalemur.com/" class="card-link" target="_blank" rel="noopener">datalemur.com →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: datalemur.com — Active as of July 2025
+          </p>
+        </div>
+        <div class="card filterable-item" data-tags="sql">
+          <span class="card-badge badge-freemium">Freemium</span>
+          <h3>StrataScratch</h3>
+          <p>SQL and analytics questions from real companies. Filter by company and difficulty. Includes video
+            walkthroughs for premium questions.</p>
+          <span class="card-meta"><span>Difficulty: Easy → Hard</span><span>Cost: Freemium</span></span>
+          <a href="https://www.stratascratch.com/" class="card-link" target="_blank" rel="noopener">stratascratch.com
+            →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: stratascratch.com — Active as of July
+            2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="sql">
+          <span class="card-badge badge-paid">Paid</span>
+          <h3>InterviewQuery</h3>
+          <p>Curated SQL questions with company-specific problem sets. Includes take-home case studies and detailed
+            answer walkthroughs.</p>
+          <span class="card-meta"><span>Difficulty: All levels</span><span>Cost: $20–$40/month</span></span>
+          <a href="https://www.interviewquery.com/" class="card-link" target="_blank" rel="noopener">interviewquery.com
+            →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: interviewquery.com — Active as of July
+            2025</p>
+        </div>
+      </div>
+
+      <!-- CASE STUDIES -->
+      <h3 style="font-family:var(--font-heading);font-size:20px;margin-bottom:16px">Take-Home Case Studies</h3>
+      <div class="cards-grid" style="margin-bottom:40px">
+        <div class="card filterable-item" data-tags="case">
+          <span class="card-badge badge-paid">Paid</span>
+          <h3>InterviewQuery — Case Studies</h3>
+          <p>Full-length take-home case studies with step-by-step solutions. Covers SQL, dashboard design, and insight
+            generation.</p>
+          <span class="card-meta"><span>Platform: InterviewQuery</span><span>Cost: $20–$40/month</span></span>
+          <a href="https://www.interviewquery.com/" class="card-link" target="_blank" rel="noopener">interviewquery.com
+            →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: interviewquery.com — Active as of July
+            2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="case">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Kaggle Notebooks (Case Study Examples)</h3>
+          <p>Search for "case study" or "EDA" notebooks to see how others approach real-world data problems end-to-end.
+          </p>
+          <span class="card-meta"><span>Platform: Kaggle</span><span>Cost: Free</span></span>
+          <a href="https://www.kaggle.com/code" class="card-link" target="_blank" rel="noopener">kaggle.com/code →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: kaggle.com/code — Active as of July 2025
+          </p>
+        </div>
+        <div class="card filterable-item" data-tags="case">
+          <span class="card-badge badge-freemium">Freemium</span>
+          <h3>Analytics Vidhya</h3>
+          <p>Articles and tutorials on case study approaches, including end-to-end data analysis walkthroughs with real
+            datasets.</p>
+          <span class="card-meta"><span>Platform: Analytics Vidhya</span><span>Cost: Freemium</span></span>
+          <a href="https://www.analyticsvidhya.com/" class="card-link" target="_blank"
+            rel="noopener">analyticsvidhya.com →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: analyticsvidhya.com — Active as of July
+            2025</p>
+        </div>
+      </div>
+
+      <!-- STATISTICS -->
+      <h3 style="font-family:var(--font-heading);font-size:20px;margin-bottom:16px">Statistics & Probability Interviews
+      </h3>
+      <div class="cards-grid" style="margin-bottom:40px">
+        <div class="card filterable-item" data-tags="stats">
+          <span class="card-badge badge-free">Free</span>
+          <h3>StatQuest with Josh Starmer</h3>
+          <p>YouTube channel covering statistics topics relevant to interviews: Bayes theorem, CLT, p-values, type I/II
+            errors, and hypothesis testing.</p>
+          <span class="card-meta"><span>Platform: YouTube</span><span>Cost: Free</span></span>
+          <a href="https://www.youtube.com/@statquest" class="card-link" target="_blank"
+            rel="noopener">youtube.com/@statquest →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: youtube.com/@statquest — Active as of
+            July 2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="stats">
+          <span class="card-badge badge-freemium">Freemium</span>
+          <h3>Brilliant.org — Statistics Fundamentals</h3>
+          <p>Interactive course covering descriptive and inferential statistics. Visual explanations with built-in
+            exercises and quizzes.</p>
+          <span class="card-meta"><span>Platform: Brilliant.org</span><span>Cost: Freemium</span></span>
+          <a href="https://brilliant.org/courses/statistics-fundamentals/" class="card-link" target="_blank"
+            rel="noopener">brilliant.org →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: brilliant.org — Active as of July 2025
+          </p>
+        </div>
+        <div class="card filterable-item" data-tags="stats">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Khan Academy — Statistics</h3>
+          <p>Free, fully structured course on statistics and probability. Covers everything from basic descriptive stats
+            to hypothesis testing.</p>
+          <span class="card-meta"><span>Platform: Khan Academy</span><span>Cost: Free</span></span>
+          <a href="https://www.khanacademy.org/math/statistics-probability" class="card-link" target="_blank"
+            rel="noopener">khanacademy.org →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: khanacademy.org — Active as of July 2025
+          </p>
+        </div>
+        <div class="card filterable-item" data-tags="stats">
+          <span class="card-badge badge-free">Free</span>
+          <h3>3Blue1Brown — Probability (YouTube)</h3>
+          <p>Visual, intuitive explanations of probability concepts. The "Essence of Probability" series is particularly
+            valuable for interview prep.</p>
+          <span class="card-meta"><span>Platform: YouTube</span><span>Cost: Free</span></span>
+          <a href="https://www.youtube.com/@3blue1brown" class="card-link" target="_blank"
+            rel="noopener">youtube.com/@3blue1brown →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: youtube.com/@3blue1brown — Active as of
+            July 2025</p>
+        </div>
+      </div>
+
+      <!-- PRODUCT SENSE -->
+      <h3 style="font-family:var(--font-heading);font-size:20px;margin-bottom:16px">Product Sense & Metrics</h3>
+      <div class="cards-grid" style="margin-bottom:40px">
+        <div class="card filterable-item" data-tags="product">
+          <span class="card-badge badge-freemium">Freemium</span>
+          <h3>Exponent (formerly Lunchclub)</h3>
+          <p>Mock interview platform with product sense and metrics questions. Practice framing answers using the MECE
+            framework and goal-metrics-guardrails structure.</p>
+          <span class="card-meta"><span>Platform: Exponent</span><span>Cost: Freemium (paid interviews)</span></span>
+          <a href="https://www.tryexponent.com/" class="card-link" target="_blank" rel="noopener">tryexponent.com →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: tryexponent.com — Active as of July 2025
+          </p>
+        </div>
+        <div class="card filterable-item" data-tags="product">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Lenny's Newsletter — Archive</h3>
+          <p>Free tier includes product metrics breakdowns and interviews with data/product leaders. Excellent for
+            understanding how metrics are used in practice.</p>
+          <span class="card-meta"><span>Platform: Lenny's Newsletter</span><span>Cost: Free tier</span></span>
+          <a href="https://www.lennysnewsletter.com/archive" class="card-link" target="_blank"
+            rel="noopener">lennysnewsletter.com/archive →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: lennysnewsletter.com — Active as of July
+            2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="product">
+          <span class="card-badge badge-paid">Paid</span>
+          <h3>Reforge — Product Strategy</h3>
+          <p>Structured program on product strategy and metrics frameworks. Covers RICE prioritization, North Star
+            metrics, and experimentation.</p>
+          <span class="card-meta"><span>Platform: Reforge</span><span>Cost: $299/course</span></span>
+          <a href="https://www.reforge.com/learn/product-strategy" class="card-link" target="_blank"
+            rel="noopener">reforge.com →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: reforge.com — Active as of July 2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="product">
+          <span class="card-badge badge-paid">Paid</span>
+          <h3>Cracking PM Interviews (Book)</h3>
+          <p>Practical guide to product management and product sense interviews. Covers frameworks, metrics, and case
+            study approaches.</p>
+          <span class="card-meta"><span>Platform: Cracking PM Interviews</span><span>Cost: $25</span></span>
+          <a href="https://www.crackingpminterviews.com/" class="card-link" target="_blank"
+            rel="noopener">crackingpminterviews.com →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: crackingpminterviews.com — Active as of
+            July 2025</p>
+        </div>
+      </div>
+
+      <!-- BEHAVIOURAL -->
+      <h3 style="font-family:var(--font-heading);font-size:20px;margin-bottom:16px">Behavioural Interviews (STAR Method)
+      </h3>
+      <div class="cards-grid" style="margin-bottom:40px">
+        <div class="card filterable-item" data-tags="behavioural">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Pramp — Mock Interviews</h3>
+          <p>Free peer-to-peer mock interview platform. Practice SQL, analytics cases, and behavioural questions with
+            real-time feedback.</p>
+          <span class="card-meta"><span>Platform: Pramp</span><span>Cost: Free</span></span>
+          <a href="https://www.pramp.com/" class="card-link" target="_blank" rel="noopener">pramp.com →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: pramp.com — Active as of July 2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="behavioural">
+          <span class="card-badge badge-freemium">Freemium</span>
+          <h3>Interviewing.io</h3>
+          <p>Anonymous mock interviews with engineers and analysts. Practice behavioural and technical questions in a
+            low-pressure environment.</p>
+          <span class="card-meta"><span>Platform: Interviewing.io</span><span>Cost: Freemium</span></span>
+          <a href="https://www.interviewing.io/" class="card-link" target="_blank" rel="noopener">interviewing.io →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: interviewing.io — Active as of July 2025
+          </p>
+        </div>
+        <div class="card filterable-item" data-tags="behavioural">
+          <span class="card-badge badge-free">Free</span>
+          <h3>STAR Method Guide — Indeed</h3>
+          <p>Step-by-step guide to the STAR (Situation, Task, Action, Result) interview response technique with examples
+            and templates.</p>
+          <span class="card-meta"><span>Platform: Indeed</span><span>Cost: Free</span></span>
+          <a href="https://www.indeed.com/career-advice/interviewing/how-to-use-the-star-interview-response-technique"
+            class="card-link" target="_blank" rel="noopener">indeed.com →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: indeed.com — Active as of July 2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="behavioural">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Blind (Glassdoor Alternative)</h3>
+          <p>Anonymous tech community for salary discussions, interview feedback, and company reviews. Useful for
+            understanding what to expect at specific companies.</p>
+          <span class="card-meta"><span>Platform: Blind</span><span>Cost: Free</span></span>
+          <a href="https://www.blind.com/" class="card-link" target="_blank" rel="noopener">blind.com →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: blind.com — Active as of July 2025</p>
+        </div>
+      </div>
+
+      <div class="filter-no-results hidden text-center" style="padding:40px;color:var(--ink-3)">
+        <p>No resources match the selected filter. Try choosing a different category.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Sections</h4>
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="learning.html">Learning</a>
+        <a href="interview.html">Interview Prep</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Popular Tools</h4>
+        <a href="https://www.python-graph-gallery.com/" target="_blank" rel="noopener">Python Graph Gallery</a>
+        <a href="https://www.kaggle.com/learn" target="_blank" rel="noopener">Kaggle Learn</a>
+        <a href="https://leetcode.com/problemset/database/" target="_blank" rel="noopener">LeetCode SQL</a>
+        <a href="https://www.storytellingwithdata.com/" target="_blank" rel="noopener">Storytelling with Data</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Data Analyst Hub — Resources for aspiring data professionals. All links verified as of July 2025.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

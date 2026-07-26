@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resource Guides — Data Analyst Hub</title>
+  <meta name="description"
+    content="Curated tools for data visualization, datasets, and business intelligence platforms. Verified links with access type indicators.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Sora:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Data Analyst Hub Home">
+        <span class="logo-dot"></span> Data Analyst Hub
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html" class="active">Resources</a></li>
+        <li><a href="learning.html">Learning</a></li>
+        <li><a href="interview.html">Interview Prep</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- ═══════════════════════════════════════════ PAGE HEADER ═══════════════════════════════════════════ -->
+    <section class="hero" style="padding:48px 24px 40px">
+      <div class="hero-inner">
+        <span class="hero-badge">Resource Guides</span>
+        <h1>Tools, Datasets & Platforms</h1>
+        <p class="hero-sub">Curated, verified resources for data visualization, business intelligence, and dataset
+          discovery. Filter by type or topic to find what you need.</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ FILTER BAR ═══════════════════════════════════════════ -->
+    <section class="section">
+      <div class="filter-bar" role="group" aria-label="Filter resources">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="visualization">Visualization</button>
+        <button class="filter-btn" data-filter="dataset">Datasets</button>
+        <button class="filter-btn" data-filter="bi-tool">BI Tools</button>
+        <button class="filter-btn" data-filter="reference">Reference</button>
+        <button class="filter-btn" data-filter="software">Software</button>
+      </div>
+
+      <!-- ── VISUALIZATION TOOLS ── -->
+      <h3 style="font-family:var(--font-heading);font-size:20px;margin-bottom:16px">Data Visualization Tools</h3>
+      <div class="cards-grid" style="margin-bottom:40px">
+        <div class="card filterable-item" data-tags="visualization,reference">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Python Graph Gallery</h3>
+          <p>Over 250 chart examples with reproducible Python code. Covers matplotlib, seaborn, plotly, and more. Each
+            example includes the full code to copy and adapt.</p>
+          <a href="https://www.python-graph-gallery.com/" class="card-link" target="_blank"
+            rel="noopener">python-graph-gallery.com →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: python-graph-gallery.com — Active as of
+            July 2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="visualization,reference">
+          <span class="card-badge badge-free">Free</span>
+          <h3>From Data to Viz</h3>
+          <p>Interactive decision tree that helps you choose the right chart type based on your data structure and the
+            story you want to tell.</p>
+          <a href="https://www.data-to-viz.com/" class="card-link" target="_blank" rel="noopener">data-to-viz.com →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: data-to-viz.com — Active as of July 2025
+          </p>
+        </div>
+        <div class="card filterable-item" data-tags="visualization,bi-tool">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Tableau Public</h3>
+          <p>Free tier of Tableau for creating and sharing interactive dashboards. Access training resources, sample
+            datasets, and a gallery of community creations.</p>
+          <a href="https://public.tableau.com/en-us/s/resources" class="card-link" target="_blank"
+            rel="noopener">public.tableau.com →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: tableau.com — Active as of July 2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="visualization,bi-tool">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Power BI Desktop</h3>
+          <p>Microsoft's free desktop application for building interactive reports and dashboards. Includes Power Query
+            for data transformation and DAX for calculations.</p>
+          <a href="https://powerbi.microsoft.com/en-us/desktop/" class="card-link" target="_blank"
+            rel="noopener">powerbi.microsoft.com →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: microsoft.com/power-bi — Active as of
+            July 2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="visualization,software">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Plotly for Python</h3>
+          <p>Interactive charting library for Python. Create publication-quality graphs with dropdowns, sliders, and
+            hover tools in under 10 lines of code.</p>
+          <a href="https://plotly.com/python/" class="card-link" target="_blank" rel="noopener">plotly.com/python →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: plotly.com — Active as of July 2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="visualization,software">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Seaborn</h3>
+          <p>Statistical data visualization library built on matplotlib. Specializes in heatmaps, violin plots,
+            pairplots, and other statistical graphics with minimal code.</p>
+          <a href="https://seaborn.pydata.org/" class="card-link" target="_blank" rel="noopener">seaborn.pydata.org
+            →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: seaborn.pydata.org — Active as of July
+            2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="visualization,reference">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Storytelling with Data Blog</h3>
+          <p>Practical articles on chart design, color theory, and visual communication by Cole Nussbaumer Knaflic. The
+            blog is freely accessible and regularly updated.</p>
+          <a href="https://www.storytellingwithdata.com/blog" class="card-link" target="_blank"
+            rel="noopener">storytellingwithdata.com/blog →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: storytellingwithdata.com — Active as of
+            July 2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="visualization,reference">
+          <span class="card-badge badge-free">Free</span>
+          <h3>ColorBrewer 2.0</h3>
+          <p>Tool for selecting colour palettes for data maps and charts. Ensures accessibility for colour-blind viewers
+            and provides perceptually uniform scales.</p>
+          <a href="https://colorbrewer2.org/" class="card-link" target="_blank" rel="noopener">colorbrewer2.org →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: colorbrewer2.org — Active as of July
+            2025</p>
+        </div>
+      </div>
+
+      <!-- ── DATASETS ── -->
+      <h3 style="font-family:var(--font-heading);font-size:20px;margin-bottom:16px">Dataset Sources</h3>
+      <div class="cards-grid" style="margin-bottom:40px">
+        <div class="card filterable-item" data-tags="dataset">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Kaggle Datasets</h3>
+          <p>Largest community-driven dataset repository. Search by domain, size, or format. Includes built-in notebooks
+            for immediate exploration.</p>
+          <a href="https://www.kaggle.com/datasets" class="card-link" target="_blank" rel="noopener">kaggle.com/datasets
+            →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: kaggle.com/datasets — Active as of July
+            2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="dataset">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Data.gov (US Government)</h3>
+          <p>Open data portal for US federal agencies. Covers economics, health, climate, demographics, and more.
+            Datasets are public domain.</p>
+          <a href="https://www.data.gov/" class="card-link" target="_blank" rel="noopener">data.gov →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: data.gov — Active as of July 2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="dataset">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Google BigQuery Public Datasets</h3>
+          <p>Massive public datasets accessible via SQL in the cloud. Includes NOAA weather, GitHub archives, NYC taxi
+            data, Wikipedia edits, and more.</p>
+          <a href="https://console.cloud.google.com/bigquery/public-datasets" class="card-link" target="_blank"
+            rel="noopener">console.cloud.google.com →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: cloud.google.com/bigquery — Active as of
+            July 2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="dataset">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Tableau Sample Data</h3>
+          <p>Free sample datasets from Tableau, including Superstore sales, World Indicators, and Population data.
+            Designed for dashboard practice.</p>
+          <a href="https://public.tableau.com/app/resources/sample-data" class="card-link" target="_blank"
+            rel="noopener">public.tableau.com →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: public.tableau.com — Active as of July
+            2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="dataset">
+          <span class="card-badge badge-free">Free</span>
+          <h3>data.gov.np (Nepal Government)</h3>
+          <p>Open data portal for Nepal government datasets. Covers agriculture, health, education, and infrastructure
+            data.</p>
+          <a href="https://data.gov.np/" class="card-link" target="_blank" rel="noopener">data.gov.np →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: data.gov.np — Active as of July 2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="dataset,reference">
+          <span class="card-badge badge-free">Free</span>
+          <h3>GitHub — Awesome Data Analysis</h3>
+          <p>Curated list of datasets, tools, and resources for data analysis projects. Community-maintained and
+            regularly updated.</p>
+          <a href="https://github.com/topics/data-analysis" class="card-link" target="_blank"
+            rel="noopener">github.com/topics/data-analysis →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: github.com/topics/data-analysis — Active
+            as of July 2025</p>
+        </div>
+      </div>
+
+      <!-- ── BI TOOLS ── -->
+      <h3 style="font-family:var(--font-heading);font-size:20px;margin-bottom:16px">Business Intelligence Platforms</h3>
+      <div class="cards-grid" style="margin-bottom:40px">
+        <div class="card filterable-item" data-tags="bi-tool">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Tableau Training Resources</h3>
+          <p>Official Tableau training videos, whitepapers, and learning paths. Covers Tableau Desktop basics through
+            advanced calculations and LOD expressions.</p>
+          <a href="https://public.tableau.com/en-us/s/resources" class="card-link" target="_blank"
+            rel="noopener">public.tableau.com →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: tableau.com — Active as of July 2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="bi-tool">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Microsoft Learn — Power BI</h3>
+          <p>Official Microsoft learning path for Power BI. Covers data modeling, DAX, report design, and certification
+            preparation for PL-300.</p>
+          <a href="https://learn.microsoft.com/en-us/training/paths/create-use-analytics-reports-power-bi/"
+            class="card-link" target="_blank" rel="noopener">learn.microsoft.com →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: learn.microsoft.com — Active as of July
+            2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="bi-tool,software">
+          <span class="card-badge badge-free">Free</span>
+          <h3>SQLBI — DAX Guide</h3>
+          <p>Comprehensive reference for DAX functions and patterns. Essential for Power BI users who need to master
+            CALCULATE, SUMX, RANKX, and time intelligence.</p>
+          <a href="https://dax.guide/" class="card-link" target="_blank" rel="noopener">dax.guide →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: dax.guide — Active as of July 2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="bi-tool,reference">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Guy in a Cube (YouTube)</h3>
+          <p>Power BI-focused YouTube channel with tutorials, tips, and deep dives into DAX, Power Query, and report
+            design. One of the most-followed BI channels.</p>
+          <a href="https://www.youtube.com/@GuyInACube" class="card-link" target="_blank"
+            rel="noopener">youtube.com/@GuyInACube →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: youtube.com/@GuyInACube — Active as of
+            July 2025</p>
+        </div>
+      </div>
+
+      <!-- ── REFERENCE & SOFTWARE ── -->
+      <h3 style="font-family:var(--font-heading);font-size:20px;margin-bottom:16px">Reference & Software</h3>
+      <div class="cards-grid" style="margin-bottom:40px">
+        <div class="card filterable-item" data-tags="reference,software">
+          <span class="card-badge badge-free">Free</span>
+          <h3>pandas Official Documentation</h3>
+          <p>Complete reference for the pandas data analysis library. Includes the "10 minutes to pandas" quickstart
+            guide and detailed API documentation.</p>
+          <a href="https://pandas.pydata.org/docs/" class="card-link" target="_blank"
+            rel="noopener">pandas.pydata.org/docs →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: pandas.pydata.org — Active as of July
+            2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="reference,software">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Jupyter Notebook</h3>
+          <p>Open-source web application for creating and sharing documents with live code, equations, visualizations,
+            and narrative text.</p>
+          <a href="https://jupyter.org/" class="card-link" target="_blank" rel="noopener">jupyter.org →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: jupyter.org — Active as of July 2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="software">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Anaconda Distribution</h3>
+          <p>Free Python distribution for data science and machine learning. Includes pandas, NumPy, matplotlib,
+            Jupyter, and over 250 pre-installed packages.</p>
+          <a href="https://www.anaconda.com/" class="card-link" target="_blank" rel="noopener">anaconda.com →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: anaconda.com — Active as of July 2025
+          </p>
+        </div>
+        <div class="card filterable-item" data-tags="software">
+          <span class="card-badge badge-free">Free</span>
+          <h3>VS Code</h3>
+          <p>Free, open-source code editor with extensions for Python, SQL, Jupyter notebooks, and data visualization.
+            The most popular editor among data professionals.</p>
+          <a href="https://code.visualstudio.com/" class="card-link" target="_blank"
+            rel="noopener">code.visualstudio.com →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: code.visualstudio.com — Active as of
+            July 2025</p>
+        </div>
+        <div class="card filterable-item" data-tags="reference">
+          <span class="card-badge badge-free">Free</span>
+          <h3>Matplotlib Official Docs</h3>
+          <p>Comprehensive documentation for matplotlib, the foundational Python plotting library. Includes gallery of
+            examples and detailed API reference.</p>
+          <a href="https://matplotlib.org/" class="card-link" target="_blank" rel="noopener">matplotlib.org →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: matplotlib.org — Active as of July 2025
+          </p>
+        </div>
+        <div class="card filterable-item" data-tags="reference">
+          <span class="card-badge badge-free">Free</span>
+          <h3>scipy.stats Documentation</h3>
+          <p>Reference for statistical functions in Python. Includes t-tests, chi-square, correlation, regression, and
+            probability distributions with examples.</p>
+          <a href="https://docs.scipy.org/doc/scipy/reference/stats.html" class="card-link" target="_blank"
+            rel="noopener">docs.scipy.org →</a>
+          <p style="font-size:12px;color:var(--ink-3);margin-top:6px">Citation: docs.scipy.org — Active as of July 2025
+          </p>
+        </div>
+      </div>
+
+      <div class="filter-no-results hidden text-center" style="padding:40px;color:var(--ink-3)">
+        <p>No resources match the selected filter. Try choosing a different category.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Sections</h4>
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="learning.html">Learning</a>
+        <a href="interview.html">Interview Prep</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Popular Tools</h4>
+        <a href="https://www.python-graph-gallery.com/" target="_blank" rel="noopener">Python Graph Gallery</a>
+        <a href="https://www.kaggle.com/learn" target="_blank" rel="noopener">Kaggle Learn</a>
+        <a href="https://leetcode.com/problemset/database/" target="_blank" rel="noopener">LeetCode SQL</a>
+        <a href="https://www.storytellingwithdata.com/" target="_blank" rel="noopener">Storytelling with Data</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Data Analyst Hub — Resources for aspiring data professionals. All links verified as of July 2025.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
