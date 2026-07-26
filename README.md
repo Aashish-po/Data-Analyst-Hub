@@ -13,7 +13,7 @@ A structured, 26-topic learning roadmap designed to take aspiring data analysts 
 This roadmap covers the **end-to-end data analyst skill set** across six progressive phases:
 
 | Phase | Duration | Focus |
-|-------|----------|-------|
+| ------- | ---------- | ------- |
 | **1. Foundations** | Weeks 1–3 | Data literacy, Excel, statistics, Python basics, ethics |
 | **2. Core Tools** | Weeks 4–7 | SQL, visualization principles, Python viz, Tableau, Power BI |
 | **3. Analysis Skills** | Weeks 8–12 | Data cleaning, EDA, applied statistics, A/B testing, metrics, cohort/funnel analysis |
@@ -349,7 +349,7 @@ All resources below are organized by phase and topic with **direct, verified lin
 ### Software & Tools (Free Tier)
 
 | Tool | Purpose | Link |
-|------|---------|------|
+| ------ | --------- | ------ |
 | Google Sheets | Spreadsheet alternative | <https://sheets.google.com/> |
 | DuckDB | Local SQL database | <https://duckdb.org/> |
 | SQLite | Lightweight database | <https://www.sqlite.org/> |
@@ -409,25 +409,51 @@ npx serve .
 
 ---
 
-## 📁 Repository Structure
+## 📁 Project Structure
 
-```
-Data-Analyst/
-├── data_analyst_roadmap.html      # Interactive roadmap (this file)
-├── data_analyst_roadmap_resources.md  # Full resource list (Markdown)
-├── QUICK_START_RESOURCE_LINKS.txt # Copy-paste quick reference
-├── data_analyst_learning_tracker.csv  # Progress tracker spreadsheet
-├── index.html                     # Main website homepage
-├── resources.html                 # Resource guides with filters
-├── learning.html                  # Learning modules with filters
-├── interview.html                 # Interview prep with filters
-├── blog.html                      # Blog/content hub
-├── contact.html                   # Contact & feedback forms
-├── css/
-│   └── style.css                  # Shared stylesheet
-└── js/
-    └── main.js                    # Shared JavaScript (nav, filters, forms)
-```
+This project is organized into the following directories and files:
+
+### Root Directory Files
+
+| File | Purpose |
+| ------ | --------- |
+| `README.md` | Project documentation, roadmap overview, and resource links |
+| `data_analyst_roadmap.html` | Interactive HTML roadmap with navigation and progress tracking |
+| `data_analyst_roadmap_resources.md` | Complete Markdown-formatted resource list organized by phase |
+| `QUICK_START_RESOURCE_LINKS.txt` | Copy-paste reference for essential learning resources |
+| `data_analyst_learning_tracker.csv` | CSV spreadsheet for tracking learning progress |
+
+### Website Pages
+
+| File | Purpose |
+| ------ | --------- |
+| `index.html` | Main website homepage with navigation |
+| `resources.html` | Resource guides with category filters |
+| `learning.html` | Learning modules organized by topic |
+| `interview.html` | Interview preparation resources and strategies |
+| `blog.html` | Blog section with article previews and "Read More" links |
+| `contact.html` | Contact form and feedback collection page |
+
+### Core Directories
+
+| Directory | Purpose | Key Contents |
+| ----------- | --------- | -------------- |
+| `css/` | Shared styling for all website pages | `style.css` — CSS variables, typography, layout, responsive design |
+| `js/` | Shared JavaScript functionality | `main.js` — Navigation, mobile menu, filters, smooth scrolling, form validation |
+| `files/` | Blog post content (Markdown and HTML) | Markdown files (original content), corresponding HTML files (rendered versions) |
+
+### Blog Content Files (`files/` directory)
+
+| Markdown File | HTML File | Topic |
+| --------------- | ----------- | ------- |
+| `sql-vs-python-data-analysts.md` | `sql-vs-python-data-analysts.html` | SQL vs Python for data analysts |
+| `how-to-prepare-product-sense-questions.md` | `how-to-prepare-product-sense-questions.html` | Product sense interview preparation |
+| `how-to-choose-right-chart-type.md` | `how-to-choose-right-chart-type.html` | Chart selection guide |
+| `free-vs-paid-courses-what-matters.md` | `free-vs-paid-courses-what-matters.html` | Learning resource evaluation |
+| `effective-resource-utilization-stop-collecting.md` | `effective-resource-utilization-stop-collecting.html` | Learning productivity tips |
+| `data-analyst-interview-playbook.md` | `data-analyst-interview-playbook.html` | Complete interview strategy |
+| `building-portfolio-that-gets-noticed.md` | `building-portfolio-that-gets-noticed.html` | Portfolio development guide |
+| `avoiding-chartjunk-design-rules.md` | `avoiding-chartjunk-design-rules.html` | Data visualization best practices |
 
 ---
 
@@ -463,3 +489,4 @@ This roadmap is provided as a free educational resource. All external links poin
 ---
 
 *Built for aspiring data professionals — from zero to hired.*
+ 
